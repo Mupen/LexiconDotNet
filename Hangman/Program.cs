@@ -1,1 +1,10 @@
-﻿Console.WriteLine("Hello, World!");
+﻿namespace Hangman
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            Menu.ShowMainMenu();
+        }
+    }
+}
