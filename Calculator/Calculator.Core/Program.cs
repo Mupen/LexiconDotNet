@@ -1,10 +1,17 @@
 ﻿namespace Calculator.Core
 {
-    internal class Program
+    /// <summary>
+    /// Entry point for the Calculator application.
+    /// </summary>
+    public class Program
     {
+        /// <summary>
+        /// Creates a CalculatorMenu instance and starts the main program loop.
+        /// </summary>
         static void Main()
         {
-            // TODO:
+            CalculatorMenu menu = new();
+            menu.Run();
         }
     }
 }
