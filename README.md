@@ -6,6 +6,7 @@ A collection of assignments completed during the Lexicon .NET developer program.
 ## Workshop Assignments
 - [Hangman](./Workshops/Hangman/README.md) — Console-based Hangman game built in C#.
 - [Calculator](./Workshops/Calculator/README.md) — Console-based calculator built in C#.
+- [SalesSystem](./Workshops/SalesSystem/README.md) — Console-based cinema sales system with ticketing, snacks, and VAT tracking.
 
 ---
 
