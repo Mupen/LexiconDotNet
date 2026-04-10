@@ -1,4 +1,5 @@
 <Solution>
+  <Folder Name="/Workshops/" />
   <Folder Name="/Workshops/Calculator/">
     <Project Path="Workshops/Calculator/Calculator.Core/Calculator.Core.csproj" />
     <Project Path="Workshops/Calculator/Calculator.Tests/Calculator.Tests.csproj" />
@@ -7,6 +8,15 @@
   <Folder Name="/Workshops/Hangman/">
     <Project Path="Workshops/Hangman/Hangman.csproj" />
   </Folder>
+
+  <Folder Name="/Workshops/SalesSystem/">
+    <Project Path="Workshops/SalesSystem/SalesSystem.Api/SalesSystem.Api.csproj" />
+    <Project Path="Workshops/SalesSystem/SalesSystem.Application/SalesSystem.Application.csproj" />
+    <Project Path="Workshops/SalesSystem/SalesSystem.Domain/SalesSystem.Domain.csproj" />
+    <Project Path="Workshops/SalesSystem/SalesSystem.Infrastructure/SalesSystem.Infrastructure.csproj" />
+    <Project Path="Workshops/SalesSystem/SalesSystem.UnitTests/SalesSystem.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/Projects/" />
 
   <Folder Name="/Projects/CleanBookingV1/">
     <Project Path="Projects/CleanBookingV1/Api/CleanBookingV1.Api/CleanBookingV1.Api.csproj" />
