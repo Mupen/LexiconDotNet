@@ -1,5 +1,5 @@
 # LexiconDotNet
-A collection of assignments completed during the Lexicon .NET developer program.
+A collection of workshop and project assignments completed during the Lexicon .NET developer program.
 
 ---
 
@@ -7,7 +7,7 @@ A collection of assignments completed during the Lexicon .NET developer program.
 - [Hangman](./Workshops/Hangman/README.md) — Console-based Hangman game built in C#.
 - [Calculator](./Workshops/Calculator/README.md) — Console-based calculator built in C#.
 - [SalesSystem](./Workshops/SalesSystem/README.md) — Console-based cinema sales system with ticketing, snacks, and VAT tracking.
-- [ShoppingCart](./Workshops/ShoppingCart/README.md) — shopping cart system with products api.
+- [ShoppingCart](./Workshops/ShoppingCart/README.md) — Backend shopping cart API with products, carts, SQLite persistence, Swagger, Docker, and unit tests.
 
 ---
 
