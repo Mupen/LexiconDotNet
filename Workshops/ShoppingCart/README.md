@@ -1,28 +1,19 @@
 # ShoppingCart
 
 ## Introduction
-A backend shopping cart API built with C# using .NET 10.0. The project is structured using layered architecture separating domain logic, application use cases, persistence, and HTTP endpoints. It includes unit tests using xUnit and can be tested manually through Swagger.
+ShoppingCart is a backend shopping cart API built with C# and .NET 10. The project represents a small online store backend with products, product brands, product categories, and shopping carts.
+
+The code is structured using layered architecture so domain logic, application workflows, persistence, and HTTP endpoints are separated. It includes SQLite persistence through Entity Framework Core, Swagger for manual API testing, Docker support, and unit tests with xUnit.
 
 The current version is backend only. There is no frontend yet.
 
 ---
 
-## Assignment Requirements
+## Assignment Scope
 
-- The system should represent a small online store with products
-- The system should include a shopping cart
-- The shopping cart should:
-  - belong to a user id
-  - contain different product items
-  - track quantity for each item
+The workshop requirement was to build a small online store backend with products and shopping carts. Each cart belongs to a user id, contains product items, tracks quantities, and can be created, read, edited, and deleted through the API.
 
-- The backend should include endpoints for:
-  - reading shopping carts
-  - creating shopping carts
-  - editing shopping carts
-  - deleting shopping carts
-
-- Quantity increase/decrease can be handled by a future frontend. The backend uses a practical set-item endpoint where quantity can be changed directly.
+See [Assignment.md](Docs/Assignment/Assignment.md) for the full requirement mapping.
 
 ---
 
@@ -104,7 +95,7 @@ The project also includes a user foundation:
 - user use cases
 - seeded demo users
 
-This user code is only a placeholder for later authentication and authorization work. There is no login, no frontend account flow, no password hashing service, and no role-based controller authorization in this version.
+This user code is only a placeholder for later authentication and authorization work. There are no user API endpoints, no login, no frontend account flow, no password hashing service, and no role-based controller authorization in this version.
 
 The project includes unit tests verifying:
 
@@ -208,7 +199,7 @@ This made it easier to validate each part before moving forward.
 
 ---
 
-## Run Locally
+## Quick Start
 
 From the repository root:
 
@@ -222,43 +213,20 @@ Open Swagger:
 http://localhost:5088/swagger
 ```
 
----
-
-## Run With Docker
-
-From the repository root:
+The project can also be run with Docker Compose:
 
 ```powershell
 docker compose -f Workshops\ShoppingCart\docker-compose.yml up --build
 ```
 
-Open Swagger:
-
-```text
-http://localhost:5088/swagger
-```
-
-Stop Docker:
+Build and test:
 
 ```powershell
-docker compose -f Workshops\ShoppingCart\docker-compose.yml down
+dotnet build Workshops\ShoppingCart\ShoppingCart.Api\ShoppingCart.Api.csproj
+dotnet test Workshops\ShoppingCart\ShoppingCart.UnitTests\ShoppingCart.UnitTests.csproj
 ```
 
-Reset the Docker database volume:
-
-```powershell
-docker compose -f Workshops\ShoppingCart\docker-compose.yml down -v
-```
-
----
-
-## Build And Test
-
-```powershell
-dotnet build Workshops\ShoppingCart\ShoppingCart.Api\ShoppingCart.Api.csproj --no-restore
-dotnet build Workshops\ShoppingCart\ShoppingCart.UnitTests\ShoppingCart.UnitTests.csproj --no-restore
-dotnet test Workshops\ShoppingCart\ShoppingCart.UnitTests\ShoppingCart.UnitTests.csproj --no-build --no-restore
-```
+See [Runbook.md](Docs/Running/Runbook.md) for full local, Docker, build, test, and database reset commands.
 
 ---
 
@@ -308,5 +276,16 @@ The `User` class and role-related code are included only as a foundation/placeho
 
 ## Documentation
 
-See [Docs/README.md](Docs/README.md) for the full documentation index.
+The deeper documentation is split by topic:
+
+| Topic | File |
+| --- | --- |
+| Assignment mapping | [Docs/Assignment/Assignment.md](Docs/Assignment/Assignment.md) |
+| Architecture | [Docs/Architecture/Architecture.md](Docs/Architecture/Architecture.md) |
+| Domain model | [Docs/Domain/DomainModel.md](Docs/Domain/DomainModel.md) |
+| API reference | [Docs/Api/ApiReference.md](Docs/Api/ApiReference.md) |
+| Technology stack | [Docs/Technology/TechnologyStack.md](Docs/Technology/TechnologyStack.md) |
+| Running, Docker, and database reset | [Docs/Running/Runbook.md](Docs/Running/Runbook.md) |
+| Manual Swagger checklist | [Docs/Testing/ManualTestChecklist.md](Docs/Testing/ManualTestChecklist.md) |
+| Release notes | [Docs/Project/ReleaseNotes_v0.1.0.md](Docs/Project/ReleaseNotes_v0.1.0.md) |
 
