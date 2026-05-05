@@ -264,6 +264,12 @@ ClientBin/
 *~
 *.dbmdl
 *.dbproj.schemaview
+Workshops/ShoppingCart/ShoppingCart.Api/*.db
+Workshops/ShoppingCart/ShoppingCart.Api/*.db-shm
+Workshops/ShoppingCart/ShoppingCart.Api/*.db-wal
+Workshops/ShoppingCart/ShoppingCart.Api/Data/*.db
+Workshops/ShoppingCart/ShoppingCart.Api/Data/*.db-shm
+Workshops/ShoppingCart/ShoppingCart.Api/Data/*.db-wal
 *.jfm
 *.pfx
 *.publishsettings
