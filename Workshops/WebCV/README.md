@@ -11,7 +11,7 @@ The project is intentionally small, but it follows the same layered structure us
 
 ## Assignment Scope
 
-The workshop requirement was to translate a CV into a web version using HTML, CSS, lists, links, social links, and relevant CV sections such as work experience, education, and skills.
+The workshop requirement was to translate a CV into a web version using HTML, CSS, lists, links, social links.
 
 This version goes further by adding:
 
@@ -61,7 +61,6 @@ WebCV.Api             ASP.NET Core API host, static frontend, app settings, seed
 WebCV.Application     Queries, use cases, repository contracts, request/response models
 WebCV.Domain          CV profile, sections, section items, and social links
 WebCV.Infrastructure  EF Core SQLite context, repository implementation, JSON seed loader
-Docs                  Assignment brief, original PDF, and generated reference images
 ```
 
 Important frontend files:
@@ -291,7 +290,6 @@ The `-m:1` option keeps the build serial. That avoids noisy project-reference ou
 - The database is created with `EnsureCreatedAsync`; EF Core migrations are not included.
 - `PUT /api/cv` replaces the single stored profile instead of editing individual sections.
 - The local SQLite database files under `WebCV.Api/Data` are runtime data, not source code.
-- Local run logs belong under `WebCV.Api/Logs`, matching the workshop layout used by ShoppingCart.
 - There is no WebCV test project yet, so verification is currently build plus manual API/browser checks.
 
 ---
