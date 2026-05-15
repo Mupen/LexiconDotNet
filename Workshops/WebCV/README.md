@@ -22,9 +22,6 @@ This version goes further by adding:
 - Docker and Docker Compose support
 - Swagger for API inspection
 - a black/gold visual theme inspired by the original PDF CV
-
-The original workshop PDF is stored in [Docs/Workshop – Web CV.pdf](Docs/Workshop%20%E2%80%93%20Web%20CV.pdf).
-
 ---
 
 ## What I Built
