@@ -3,7 +3,7 @@
 // ============================================================================
 
 const cvRoot = document.querySelector("#cv");
-const desktopContentLayout = window.matchMedia("(min-width: 821px)");
+const desktopContentLayout = window.matchMedia("(min-width: 820px)");
 
 loadCv();
 
