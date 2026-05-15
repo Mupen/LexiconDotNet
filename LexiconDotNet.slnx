@@ -24,6 +24,13 @@
     <Project Path="Workshops/ShoppingCart/ShoppingCart.Infrastructure/ShoppingCart.Infrastructure.csproj" />
     <Project Path="Workshops/ShoppingCart/ShoppingCart.UnitTests/ShoppingCart.UnitTests.csproj" />
   </Folder>
+
+  <Folder Name="/Workshops/WebCV/">
+    <Project Path="Workshops/WebCV/WebCV.Api/WebCV.Api.csproj" />
+    <Project Path="Workshops/WebCV/WebCV.Application/WebCV.Application.csproj" />
+    <Project Path="Workshops/WebCV/WebCV.Domain/WebCV.Domain.csproj" />
+    <Project Path="Workshops/WebCV/WebCV.Infrastructure/WebCV.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/Projects/" />
 
   <Folder Name="/Projects/CleanBookingV1/">

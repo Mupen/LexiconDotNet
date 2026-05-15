@@ -8,6 +8,7 @@ A collection of workshop and project assignments completed during the Lexicon .N
 - [Calculator](./Workshops/Calculator/README.md) — Console-based calculator built in C#.
 - [SalesSystem](./Workshops/SalesSystem/README.md) — Console-based cinema sales system with ticketing, snacks, and VAT tracking.
 - [ShoppingCart](./Workshops/ShoppingCart/README.md) — Backend shopping cart API with products, carts, SQLite persistence, Swagger, Docker, and unit tests.
+- [WebCV](./Workshops/WebCV/README.md) — Full-stack CV web app with ASP.NET Core, SQLite, JavaScript, responsive HTML/CSS, Swagger, and Docker.
 
 ---
 
