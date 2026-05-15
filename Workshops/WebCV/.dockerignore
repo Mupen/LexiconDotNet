@@ -1,0 +1,7 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+WebCV.Api/Data/
+Docs/Pdf/
+Docs/*.png

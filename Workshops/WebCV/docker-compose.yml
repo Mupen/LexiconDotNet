@@ -1,0 +1,19 @@
+services:
+  webcv-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webcv-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__WebCV: Data Source=/app/Data/webcv.db
+      SeedData__DefaultCvPath: SeedData/default-cv.json
+    ports:
+      - "5096:8080"
+    volumes:
+      # Keep the SQLite database between container rebuilds.
+      - webcv-data:/app/Data
+
+volumes:
+  webcv-data:

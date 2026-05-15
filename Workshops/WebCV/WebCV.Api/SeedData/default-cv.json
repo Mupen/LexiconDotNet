@@ -1,0 +1,209 @@
+{
+  "fullName": "Daniel Henriksen",
+  "title": "Webbdesigner & Systemutvecklare",
+  "summary": "Samvetsgrann systemutvecklare från Kronoberg med stark social kompetens, yrkesutbildning inom system- och front-end-utveckling samt erfarenhet av webbdesign och datorreparation. Trivs i team, är nyfiken på nya teknologier och vill fortsätta utveckla sin yrkesskicklighet.",
+  "location": "Växjö, Kronoberg, Sweden",
+  "email": "daniel.henriksen1994work@gmail.com",
+  "phone": "+46 70 261 57 38",
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/",
+      "sortOrder": 1
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/",
+      "sortOrder": 2
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Skills",
+      "layout": "tags",
+      "sortOrder": 1,
+      "items": [
+        {
+          "title": "Webbutveckling",
+          "subtitle": "Front-end och webbdesign",
+          "period": "Aktuellt",
+          "description": "Erfarenhet av webbdesign, responsiva gränssnitt och publiceringslösningar från utbildning och praktik.",
+          "tags": [ "HTML5", "CSS3", "JavaScript", "React", "PHP" ],
+          "sortOrder": 1
+        },
+        {
+          "title": "Systemutveckling",
+          "subtitle": "Java och databaser",
+          "period": "Aktuellt",
+          "description": "Studerat objektorienterad programmering, Java EE, RESTful API:er, Spring och databaskopplingar.",
+          "tags": [ "Java SE", "Java EE", "RESTful API", "Spring", "MySQL" ],
+          "sortOrder": 2
+        },
+        {
+          "title": "Verktyg och miljöer",
+          "subtitle": "Utvecklingsverktyg och drift",
+          "period": "Aktuellt",
+          "description": "Arbetat med versionshantering, utvecklingsmiljöer och grundläggande server- och virtualiseringsmiljöer.",
+          "tags": [ "GitHub", "Visual Studio", "Visual Studio Code", "Node.js", "PowerShell", "Hyper-V", "XAMPP" ],
+          "sortOrder": 3
+        },
+        {
+          "title": "Språk och kontor",
+          "subtitle": "Kommunikation och dokumentation",
+          "period": "Aktuellt",
+          "description": "Svenska och engelska samt praktisk erfarenhet av Office-verktyg.",
+          "tags": [ "Svenska", "Engelska", "Office Word", "Google Excel" ],
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "heading": "Education",
+      "layout": "timeline",
+      "sortOrder": 2,
+      "items": [
+        {
+          "title": "Lexicon",
+          "subtitle": "Java Systemutveckling",
+          "period": "Dec 2018 - Jan 2020",
+          "description": "Test och leading med unit-testing och TDD samt front-end-utveckling med databaser. Java EE med Servlets, JSP, JSF, RESTful API, Spring, MySQL, JDBC, JPA, Hibernate, JavaScript, JQuery, HTML5, CSS3, Bootstrap och objektorienterad programmering.",
+          "tags": [ "Java EE", "TDD", "RESTful API", "Spring", "MySQL", "JavaScript" ],
+          "sortOrder": 1
+        },
+        {
+          "title": "YH Växjö",
+          "subtitle": "IT-Infrastrukturspecialist",
+          "period": "2016 - 2017",
+          "description": "Utbildningen gav goda kunskaper inom installation och konfigurering av servrar, klienter, switches och routrar. Kursen avslutades inte på grund av personliga anledningar.",
+          "tags": [ "Servrar", "Klienter", "Switches", "Routrar" ],
+          "sortOrder": 2
+        },
+        {
+          "title": "YH Växjö",
+          "subtitle": "Nätapplikationsprogrammerare",
+          "period": "2013 - 2015",
+          "description": "Apputveckling, PHP, Java Android-utveckling och webbdesign med inriktning inom arbetsmetoder som agil systemutveckling, vattenfallsmodellen och Scrum.",
+          "tags": [ "Apputveckling", "PHP", "Android", "Webbdesign", "Scrum" ],
+          "sortOrder": 3
+        },
+        {
+          "title": "JB-gymnasiet",
+          "subtitle": "IT-programmet",
+          "period": "2010 - 2013",
+          "description": "IT-programmet gav goda grunder för kvalificerade arbeten såsom designer, webbprogrammerare, nätverkstekniker, systemvetare, programmerare och IT-samordnare.",
+          "tags": [ "IT", "Webbprogrammering", "Nätverk", "Programmering" ],
+          "sortOrder": 4
+        }
+      ]
+    },
+    {
+      "heading": "Experience",
+      "layout": "experience",
+      "sortOrder": 3,
+      "items": [
+        {
+          "title": "Alvitech AB",
+          "subtitle": "Webbutvecklare",
+          "period": "Okt 2019 - Feb 2020",
+          "description": "Arbetade med webbdesign för en hemsida som fungerar som en tjänst för folk som spelar på trav.",
+          "tags": [ ".NET", "HTML5", "CSS3", "JavaScript", "React", "GitHub", "Visual Studio Code" ],
+          "sortOrder": 1
+        },
+        {
+          "title": "Standout AB",
+          "subtitle": "Nätapplikationsprogrammerare",
+          "period": "Mar 2015 - Jun 2015",
+          "description": "Arbetade med att skapa en Android mobile app som skulle fungera som ett innehållshanteringssystem och publiceringsverktyg.",
+          "tags": [ "Java", "Android Studio", "JavaScript", "PHP", "MySQL", "GitHub" ],
+          "sortOrder": 2
+        },
+        {
+          "title": "Regionförbundet södra Småland",
+          "subtitle": "Webbdesigner",
+          "period": "Mar 2014 - Jun 2014",
+          "description": "Arbetade i ett team med målet att skapa ett innehållshanteringssystem och publiceringsverktyg för Regionförbundet södra Småland.",
+          "tags": [ "HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "GitHub" ],
+          "sortOrder": 3
+        },
+        {
+          "title": "Boss Media AB",
+          "subtitle": "IT-Samordnare",
+          "period": "Mar 2013 - Jun 2013",
+          "description": "Arbetade med det interna nätverket, skrev in ändringar i datorsystem, lade till konton, uppdaterade hårdvara och felsökte skrivare och andra maskiner.",
+          "tags": [ "IT-support", "Nätverk", "Kontohantering", "Felsökning" ],
+          "sortOrder": 4
+        },
+        {
+          "title": "InfoCare CS AB",
+          "subtitle": "Datorreparatör",
+          "period": "Jun 2012 - Aug 2012",
+          "description": "Arbetade som datorreparatör och hade även en praktikperiod på tre månader under 2011.",
+          "tags": [ "Datorreparation", "Hårdvara", "Felsökning" ],
+          "sortOrder": 5
+        },
+        {
+          "title": "Mohedaskolan",
+          "subtitle": "Förskolepedagog",
+          "period": "Sep 2011 - Nov 2011",
+          "description": "Arbetade med att följa läroplanen, stötta barn i grupp och bidra till underhållning av datorerna på skolan.",
+          "tags": [ "Pedagogik", "Kommunikation", "Datorunderhåll" ],
+          "sortOrder": 6
+        }
+      ]
+    },
+    {
+      "heading": "Projects",
+      "layout": "cards",
+      "sortOrder": 4,
+      "items": [
+        {
+          "title": "Travtjänst",
+          "subtitle": "Webbdesign hos Alvitech AB",
+          "period": "2019 - 2020",
+          "description": "Webbdesign för en tjänst riktad mot användare som spelar på trav.",
+          "tags": [ ".NET", "HTML5", "CSS3", "JavaScript", "React" ],
+          "sortOrder": 1
+        },
+        {
+          "title": "Android CMS-app",
+          "subtitle": "Nätapplikationsprogrammering hos Standout AB",
+          "period": "2015",
+          "description": "Android-app för innehållshantering och publicering.",
+          "tags": [ "Java", "Android Studio", "JavaScript", "PHP", "MySQL" ],
+          "sortOrder": 2
+        },
+        {
+          "title": "Publiceringsverktyg",
+          "subtitle": "Webbdesign hos Regionförbundet södra Småland",
+          "period": "2014",
+          "description": "Teamarbete med ett innehållshanteringssystem och publiceringsverktyg.",
+          "tags": [ "HTML5", "CSS3", "JavaScript", "PHP", "MySQL" ],
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "heading": "Fritid",
+      "layout": "interests",
+      "sortOrder": 5,
+      "items": [
+        {
+          "title": "Penna- och papperrollspel",
+          "subtitle": "Fantasi, gruppspel och servergemenskap",
+          "period": "Helger",
+          "description": "Jag har ett intresse inom penna- och papperrollspel vilket jag spelar på helgerna och arrangerar intressanta grupper och spelledare runt världen på min privata server. Jag är en stor fantasiläsare med ett intresse inom Wuxia, Xianxia, Xuanhuan och Eurocentric Quasi-Medieval fantasi.",
+          "tags": [],
+          "sortOrder": 1
+        },
+        {
+          "title": "Strategi och managementspel",
+          "subtitle": "Historiska strategier, ekonomi och systembyggande",
+          "period": "Helger",
+          "description": "Jag tycker om strategispel som Crusader Kings, Europa Universalis samt management- och ekonomispel som Factorio och Songs of Syx.",
+          "tags": [],
+          "sortOrder": 2
+        }
+      ]
+    }
+  ]
+}
