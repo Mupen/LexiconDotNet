@@ -1,0 +1,224 @@
+/* ==========================================================================
+   Design Tokens
+   --------------------------------------------------------------------------
+   The palette is intentionally restrained because this is a learning tool.
+   Color changes come from theme data in app.js, not from hard-coded one-off
+   component styles.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+  --page: #f4f1ea;
+  --surface: #fffdf8;
+  --panel: #f8f4ec;
+  --ink: #202124;
+  --muted: #62615c;
+  --line: #d8d1c3;
+  --accent: #256f5b;
+  --accent-strong: #174b3d;
+  --danger: #9f2f2f;
+  --code: #14342b;
+}
+
+[data-theme="midnight"] {
+  color-scheme: dark;
+  --page: #111315;
+  --surface: #1b1f22;
+  --panel: #23282c;
+  --ink: #f2efe7;
+  --muted: #bcb6aa;
+  --line: #3b4146;
+  --accent: #75b798;
+  --accent-strong: #a1d7b8;
+  --danger: #ef9a9a;
+  --code: #d7f5e8;
+}
+
+[data-density="compact"] {
+  --space: 12px;
+  --control-height: 36px;
+}
+
+[data-density="comfortable"] {
+  --space: 18px;
+  --control-height: 42px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background: var(--page);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+button,
+input,
+select {
+  min-height: var(--control-height, 42px);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+}
+
+button {
+  padding: 0 14px;
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button.secondary {
+  color: var(--ink);
+  background: transparent;
+  border-color: var(--line);
+}
+
+button.danger {
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0 10px;
+  color: var(--ink);
+  background: var(--surface);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.app-shell {
+  width: min(96vw, 1320px);
+  margin: 24px auto;
+  display: grid;
+  gap: var(--space, 18px);
+}
+
+.hero,
+.panel,
+.dashboard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.hero {
+  display: grid;
+  gap: 8px;
+  padding: 28px;
+}
+
+.hero p {
+  max-width: 880px;
+  color: var(--muted);
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
+  gap: var(--space, 18px);
+  align-items: start;
+}
+
+.panel-grid {
+  display: grid;
+  gap: var(--space, 18px);
+}
+
+.panel,
+.dashboard {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+.panel header,
+.dashboard header {
+  display: grid;
+  gap: 4px;
+}
+
+.panel header p,
+.dashboard header p,
+.hint,
+.meta {
+  color: var(--muted);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.form-grid .full {
+  grid-column: 1 / -1;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.status-list,
+.event-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.status-item,
+.event-item {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+}
+
+.status-item span,
+.event-item span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.json-box {
+  min-height: 160px;
+  padding: 12px;
+  overflow: auto;
+  color: var(--code);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  white-space: pre-wrap;
+}
+
+.loading {
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 860px) {
+  .workspace,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+DataDrivenCaching.Api/Data/
+DataDrivenCaching.Api/logs/
+Docs/Pdf/
+Docs/*.png

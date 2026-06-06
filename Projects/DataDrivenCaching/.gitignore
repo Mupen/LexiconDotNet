@@ -1,0 +1,3 @@
+DataDrivenCaching.Api/Data/*.db
+DataDrivenCaching.Api/Data/*.db-shm
+DataDrivenCaching.Api/Data/*.db-wal

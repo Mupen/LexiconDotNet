@@ -1,0 +1,405 @@
+Create a learning/demo project focused on ALL major client/backend storage and caching systems used in modern web applications and browser games.
+
+Tech stack:
+
+* Backend: ASP.NET Core Minimal API (.NET / C#)
+* Frontend: Plain HTML, CSS, and Vanilla JavaScript
+* No React
+* No frameworks unless absolutely required
+* Goal is EDUCATION and EXPLANATION, not production polish
+
+The project should behave like a “storage laboratory” or “storage sandbox”.
+
+The purpose is to:
+
+1. Demonstrate every major storage type
+2. Show where data is actually stored
+3. Show how frontend and backend interact
+4. Show good vs bad practices
+5. Explain trust boundaries
+6. Explain caching layers
+7. Explain what is authoritative vs temporary vs cached
+
+IMPORTANT:
+This is intended as a LEARNING PROJECT.
+The code should be EXTREMELY commented and verbose.
+Prefer clarity over brevity.
+Every important line should explain:
+
+* what it does
+* why it exists
+* where the data lives
+* who can modify it
+* when it disappears
+* security implications
+* performance implications
+
+==================================================
+PROJECT STRUCTURE
+=================
+
+Create separate demo sections/pages/modules for:
+
+1. JavaScript Runtime Memory
+2. sessionStorage
+3. localStorage
+4. Cookies
+5. ASP.NET Session
+6. IndexedDB
+7. Cache API
+8. Service Worker
+9. HTTP Cache Headers
+10. Backend Memory Cache (IMemoryCache)
+11. Optional: Redis demo abstraction/mock
+
+==================================================
+GENERAL RULES
+=============
+
+* Use very small focused examples
+* Each storage type should:
+
+  * save data
+  * load data
+  * update data
+  * remove data
+  * visually display current state
+  * explain persistence behavior
+* Include buttons for:
+
+  * Save
+  * Load
+  * Clear
+  * Refresh test
+* Use browser DevTools explanations in comments
+* Include comments explaining:
+
+  * RAM vs disk
+  * client vs server
+  * authority vs cache
+  * temporary vs persistent
+  * automatic vs manual sync
+
+==================================================
+MAIN LEARNING GOAL
+==================
+
+The project should teach the distinction between:
+
+* Runtime memory
+* Browser storage
+* Browser caching
+* Backend caching
+* Backend authority/database
+* Identity/session transport
+
+==================================================
+DEMO 1 — JAVASCRIPT MEMORY
+==========================
+
+Demonstrate:
+
+* JS variables only exist in RAM
+* Data disappears on refresh
+* Objects in memory
+* Arrays in memory
+
+Example:
+
+* Counter
+* Selected unit
+* Hovered tile
+* Temporary game state
+
+Explain:
+
+* fastest storage
+* not persistent
+* frontend only
+
+==================================================
+DEMO 2 — sessionStorage
+=======================
+
+Demonstrate:
+
+* sessionStorage.setItem()
+* getItem()
+* removeItem()
+* clear()
+
+Show:
+
+* survives refresh
+* disappears when tab closes
+
+Example:
+
+* selected menu tab
+* current viewed planet
+* temporary UI state
+
+==================================================
+DEMO 3 — localStorage
+=====================
+
+Demonstrate:
+
+* storing strings
+* JSON.stringify
+* JSON.parse
+
+Example:
+
+* theme
+* volume
+* keybindings
+
+Show:
+
+* survives browser restart
+* can be edited manually in DevTools
+
+IMPORTANT:
+Include explicit anti-cheat/security explanation:
+
+* localStorage is NOT authoritative
+* users can edit values manually
+
+==================================================
+DEMO 4 — COOKIES
+================
+
+Demonstrate:
+
+* creating cookies in JavaScript
+* reading cookies
+* session cookies
+* persistent cookies
+
+Backend should:
+
+* set HttpOnly cookies
+* explain Secure
+* explain SameSite
+* explain Expires
+
+Show:
+
+* cookies automatically sent with requests
+* difference between JS-readable and HttpOnly cookies
+
+==================================================
+DEMO 5 — ASP.NET SESSION
+========================
+
+Demonstrate:
+
+* AddSession
+* UseSession
+* Session.SetString
+* Session.GetString
+
+Explain:
+
+* actual data stored on backend
+* browser only stores session id cookie
+
+Show:
+
+* session timeout
+* idle timeout behavior
+
+==================================================
+DEMO 6 — INDEXEDDB
+==================
+
+Demonstrate:
+
+* creating database
+* object stores
+* saving objects
+* reading objects
+* deleting objects
+
+Example:
+
+* cached map sectors
+* planet database
+* offline save draft
+
+Explain:
+
+* browser database
+* async API
+* large structured storage
+
+==================================================
+DEMO 7 — CACHE API
+==================
+
+Demonstrate:
+
+* caches.open()
+* cache.add()
+* cache.match()
+* cache.put()
+
+Example:
+
+* cache JSON file
+* cache image
+* cache fake map chunk
+
+Explain:
+
+* stores HTTP responses
+* different from localStorage
+* useful for offline support
+
+==================================================
+DEMO 8 — SERVICE WORKER
+=======================
+
+Demonstrate:
+
+* service worker registration
+* fetch interception
+* offline fallback
+* cached assets
+
+Example:
+
+* cache app shell
+* load offline image/page
+
+Explain:
+
+* background network layer
+* offline-first architecture
+
+==================================================
+DEMO 9 — HTTP CACHE HEADERS
+===========================
+
+Backend should demonstrate:
+
+* Cache-Control
+* no-store
+* max-age
+* immutable
+
+Create:
+
+* static asset endpoint
+* API endpoint with cache disabled
+* API endpoint with short cache
+
+Explain:
+
+* browser automatic caching
+* stale data problems
+* cache invalidation
+
+==================================================
+DEMO 10 — BACKEND MEMORY CACHE
+==============================
+
+Demonstrate:
+
+* IMemoryCache
+* cache hit
+* cache miss
+* expiration
+
+Example:
+
+* expensive fake query
+* delayed response
+* cached response becomes instant
+
+Explain:
+
+* backend RAM cache
+* server-side only
+* lost on restart
+
+==================================================
+DEMO 11 — OPTIONAL REDIS ARCHITECTURE
+=====================================
+
+Do not require Redis installation unless optional.
+
+Can be:
+
+* mock architecture
+* interface abstraction
+* commented example
+
+Explain:
+
+* distributed cache
+* shared backend cache
+* scaling multiple servers
+
+==================================================
+IMPORTANT EDUCATIONAL EXPLANATIONS
+==================================
+
+For EVERY storage type explain:
+
+* where data physically lives
+* whether it survives refresh
+* whether it survives restart
+* whether JS can access it
+* whether backend can access it
+* whether browser automatically sends it
+* whether user can edit it
+* whether it is secure
+* intended use case
+* bad use cases
+
+==================================================
+VISUALIZATION REQUIREMENTS
+==========================
+
+Each demo page should visibly show:
+
+* current stored value
+* storage location
+* persistence lifetime
+* client/server ownership
+* security level
+
+==================================================
+ARCHITECTURE STYLE
+==================
+
+Use:
+
+* simple modular structure
+* storage service abstractions where useful
+* data-driven naming where reasonable
+* explicit comments over clever abstractions
+
+Avoid:
+
+* overengineering
+* magic frameworks
+* hidden behavior
+* unnecessary libraries
+
+==================================================
+MOST IMPORTANT CONCEPT
+======================
+
+The project must repeatedly reinforce:
+
+"Frontend storage is convenience.
+Backend storage is authority.
+Cache is speed.
+Cookies are identity transport."
+
+And also:
+
+"Different storage systems solve different problems."

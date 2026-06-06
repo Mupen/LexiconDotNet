@@ -1,0 +1,25 @@
+services:
+  datadrivencaching-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datadrivencaching-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DataDrivenCaching: Data Source=/app/Data/datadrivencaching.db
+    ports:
+      - "5128:8080"
+    volumes:
+      # WHAT:
+      # Store SQLite data in a named Docker volume.
+      #
+      # WHY:
+      # SQLite is the backend authority for accounts and lab records. If the
+      # database lived only inside the container filesystem, rebuilding the
+      # container would erase the demo data and blur the lesson about durable
+      # backend storage.
+      - datadrivencaching-data:/app/Data
+
+volumes:
+  datadrivencaching-data:
