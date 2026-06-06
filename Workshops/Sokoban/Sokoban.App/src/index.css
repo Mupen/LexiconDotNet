@@ -1,0 +1,70 @@
+:root {
+  /* Text colors */
+  --color-text: #172033;
+  --color-text-muted: #53606f;
+  --color-text-soft: #657184;
+  --color-success-text: #1f6b2b;
+
+  /* Page and panel surfaces */
+  --color-page-bg: #f4f7fb;
+  --color-panel-bg: #ffffff;
+  --color-win-bg: #ecf8ee;
+
+  /* Borders and focus states */
+  --color-border: #aab4c2;
+  --color-border-soft: #d5dbe4;
+  --color-focus: #2c6fd6;
+  --color-success-border: #63a06b;
+
+  /* Board and tile colors */
+  --color-board-edge: #172033;
+  --color-cell-space: #edf1f5;
+  --color-cell-goal: #e6f4ef;
+  --color-cell-wall: #263243;
+  --color-cell-wall-line: #111827;
+  --color-goal-ring: #26935c;
+
+  /* Block colors */
+  --color-block-border: #6f4317;
+  --color-block-bg: #b9732f;
+  --color-block-highlight: #d29655;
+  --color-block-done-border: #1d6b40;
+  --color-block-done-bg: #39a96b;
+  --color-block-done-highlight: #72d79d;
+
+  font-family: system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-page-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  color: var(--color-text);
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  margin: 0 0 6px;
+}
+
+p {
+  margin: 0;
+}

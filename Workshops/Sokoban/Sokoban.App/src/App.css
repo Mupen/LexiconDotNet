@@ -1,0 +1,218 @@
+/* ==========================================================================
+   Page layout and controls
+   ========================================================================== */
+
+.app-shell {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+}
+
+.controls-text {
+  color: var(--color-text-soft);
+  font-size: 14px;
+}
+
+.reset-button {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-panel-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  font: inherit;
+  padding: 8px 14px;
+}
+
+.reset-button:hover,
+.reset-button:focus-visible {
+  border-color: var(--color-focus);
+  outline: none;
+}
+
+.status-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.status-row div {
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  background: var(--color-panel-bg);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.status-label {
+  display: block;
+  color: var(--color-text-soft);
+  font-size: 13px;
+}
+
+.status-row strong {
+  color: var(--color-text);
+  font-size: 22px;
+}
+
+.win-message {
+  border: 1px solid var(--color-success-border);
+  border-radius: 8px;
+  background: var(--color-win-bg);
+  color: var(--color-success-text);
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+/* ==========================================================================
+   Board grid
+   ========================================================================== */
+
+.board-wrap {
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.board {
+  /*
+    These custom properties come from Board.jsx.
+
+    The board is made from fixed-size square cells. Fixed cells make the puzzle
+    easier to read because every row and column lines up exactly.
+  */
+  --cell-size: 48px;
+  display: grid;
+  grid-template-columns: repeat(var(--board-columns), var(--cell-size));
+  grid-template-rows: repeat(var(--board-rows), var(--cell-size));
+  width: max-content;
+  border: 2px solid var(--color-board-edge);
+  background: var(--color-board-edge);
+}
+
+/* ==========================================================================
+   Static tiles and moving blocks
+   ========================================================================== */
+
+.cell {
+  position: relative;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  box-sizing: border-box;
+}
+
+.cell-space {
+  background: var(--color-cell-space);
+}
+
+.cell-goal {
+  background: var(--color-cell-goal);
+}
+
+.cell-wall {
+  background: var(--color-cell-wall);
+  box-shadow: inset 0 0 0 1px var(--color-cell-wall-line);
+}
+
+.goal-dot {
+  position: absolute;
+  inset: calc(var(--cell-size) * 0.32);
+  border: 2px solid var(--color-goal-ring);
+  border-radius: 50%;
+}
+
+.block {
+  position: absolute;
+  inset: calc(var(--cell-size) * 0.15);
+  border: 2px solid var(--color-block-border);
+  border-radius: 5px;
+  background: var(--color-block-bg);
+  box-shadow: inset 0 0 0 2px var(--color-block-highlight);
+}
+
+.cell-block-done .block {
+  border-color: var(--color-block-done-border);
+  background: var(--color-block-done-bg);
+  box-shadow: inset 0 0 0 2px var(--color-block-done-highlight);
+}
+
+/*
+  Optional tile sprites can be tested in the tile selectors above later.
+
+  Keep sprite styling in these same selectors so the React components and game
+  logic do not need to change. For example, a wall sprite could replace the
+  current .cell-wall background:
+
+  .cell-wall {
+    background-image: url('/sprites/tiles/wall.png');
+    background-size: cover;
+  }
+*/
+
+/* ==========================================================================
+   Player sprites
+   --------------------------------------------------------------------------
+   The player uses three image files:
+   - down/front
+   - up/back
+   - side
+
+   The right-facing player reuses the side sprite and flips it in CSS.
+   ========================================================================== */
+
+.player {
+  position: absolute;
+  inset: calc(var(--cell-size) * 0.03);
+  background-image: url('/sprites/player/player-down.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.player-up {
+  background-image: url('/sprites/player/player-up.png');
+}
+
+.player-left,
+.player-right {
+  background-image: url('/sprites/player/player-side.png');
+}
+
+.player-right {
+  transform: scaleX(-1);
+}
+
+/* ==========================================================================
+   Small screens
+   ========================================================================== */
+
+@media (max-width: 720px) {
+  .app-shell {
+    padding: 20px 12px 32px;
+  }
+
+  .top-bar {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .status-row {
+    grid-template-columns: 1fr;
+  }
+
+  .board {
+    --cell-size: 36px;
+  }
+}
