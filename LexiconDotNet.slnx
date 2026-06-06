@@ -25,6 +25,8 @@
     <Project Path="Workshops/ShoppingCart/ShoppingCart.UnitTests/ShoppingCart.UnitTests.csproj" />
   </Folder>
 
+  <Folder Name="/Workshops/Sokoban/" />
+
   <Folder Name="/Workshops/WebCV/">
     <Project Path="Workshops/WebCV/WebCV.Api/WebCV.Api.csproj" />
     <Project Path="Workshops/WebCV/WebCV.Application/WebCV.Application.csproj" />
@@ -32,7 +34,12 @@
     <Project Path="Workshops/WebCV/WebCV.Infrastructure/WebCV.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/Projects/" />
-
+  <Folder Name="/Projects/DataDrivenCaching/">
+    <Project Path="Projects/DataDrivenCaching/DataDrivenCaching.Api/DataDrivenCaching.Api.csproj" />
+    <Project Path="Projects/DataDrivenCaching/DataDrivenCaching.Application/DataDrivenCaching.Application.csproj" />
+    <Project Path="Projects/DataDrivenCaching/DataDrivenCaching.Domain/DataDrivenCaching.Domain.csproj" />
+    <Project Path="Projects/DataDrivenCaching/DataDrivenCaching.Infrastructure/DataDrivenCaching.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/Projects/CleanBookingV1/">
     <Project Path="Projects/CleanBookingV1/Api/CleanBookingV1.Api/CleanBookingV1.Api.csproj" />
     <Project Path="Projects/CleanBookingV1/Application/CleanBookingV1.Application/CleanBookingV1.Application.csproj" />
