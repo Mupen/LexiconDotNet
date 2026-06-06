@@ -7,16 +7,35 @@
 
 :root {
   color-scheme: light;
+
+  /* Text colors */
   --ink: #f7f0da;
   --muted: #c8bea2;
+
+  /* Layout surfaces */
+  --page-bg: #050505;
+  --page-bg-rgb: 5 5 5;
+  --overlay-rgb: 0 0 0;
   --line: #3a321f;
   --surface: #101010;
   --panel: #181818;
   --panel-strong: #222018;
+  --media-bg: #090909;
+  --footer-bg: #0a0a0a;
+  --hero-bg-warm: #14110a;
+
+  /* Brand highlights */
   --gold: #d6a93a;
   --gold-strong: #f0c85a;
+  --gold-rgb: 214 169 58;
+
+  /* Action and success accents */
   --accent: #15803d;
   --accent-strong: #8ee0a5;
+  --accent-rgb: 21 128 61;
+  --tag-ink: #d8fbe0;
+
+  /* Status and CV section markers */
   --mark: #dc2626;
   --education: #2563eb;
   --experience: #eab308;
@@ -34,7 +53,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  background: #050505;
+  background: var(--page-bg);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
@@ -134,10 +153,10 @@ h3 {
   align-items: stretch;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgb(214 169 58 / 18%), transparent 48%),
-    radial-gradient(circle at top right, rgb(214 169 58 / 18%), transparent 48%),
-    linear-gradient(90deg, rgb(0 0 0 / 82%), rgb(0 0 0 / 42%)),
-    linear-gradient(135deg, #050505, #14110a 62%, #050505);
+    radial-gradient(circle at top left, rgb(var(--gold-rgb) / 18%), transparent 48%),
+    radial-gradient(circle at top right, rgb(var(--gold-rgb) / 18%), transparent 48%),
+    linear-gradient(90deg, rgb(var(--overlay-rgb) / 82%), rgb(var(--overlay-rgb) / 42%)),
+    linear-gradient(135deg, var(--page-bg), var(--hero-bg-warm) 62%, var(--page-bg));
 }
 
 .profile-media {
@@ -148,9 +167,9 @@ h3 {
   margin: 0;
   overflow: hidden;
   place-items: center;
-  border: 2px solid rgb(214 169 58 / 86%);
-  background: #090909;
-  box-shadow: 0 20px 46px rgb(0 0 0 / 32%);
+  border: 2px solid rgb(var(--gold-rgb) / 86%);
+  background: var(--media-bg);
+  box-shadow: 0 20px 46px rgb(var(--overlay-rgb) / 32%);
 }
 
 .profile-image {
@@ -393,8 +412,8 @@ ul.tags {
 
 ul.tags li {
   padding: 4px 9px;
-  color: #d8fbe0;
-  background: rgb(21 128 61 / 28%);
+  color: var(--tag-ink);
+  background: rgb(var(--accent-rgb) / 28%);
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -409,9 +428,9 @@ ul.tags li {
 .cv-footer {
   border-top: 1px solid var(--line);
   background:
-    radial-gradient(circle at bottom left, rgb(214 169 58 / 14%), transparent 34%),
-    radial-gradient(circle at bottom right, rgb(214 169 58 / 14%), transparent 34%),
-    #0a0a0a;
+    radial-gradient(circle at bottom left, rgb(var(--gold-rgb) / 14%), transparent 34%),
+    radial-gradient(circle at bottom right, rgb(var(--gold-rgb) / 14%), transparent 34%),
+    var(--footer-bg);
 }
 
 .cv-footer .cv-section {
