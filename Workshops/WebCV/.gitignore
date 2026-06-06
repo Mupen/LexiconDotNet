@@ -1,0 +1,3 @@
+WebCV.Api/Data/*.db
+WebCV.Api/Data/*.db-shm
+WebCV.Api/Data/*.db-wal
