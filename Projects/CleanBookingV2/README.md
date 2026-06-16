@@ -80,6 +80,8 @@ Current known verification result:
 
 If `dotnet test` hangs at restore, run restore directly first, then run test with `--no-restore`. See the runbook troubleshooting section.
 
-## Production Notes
+## AI Disclosure
 
-This project is suitable for local learning and demo use. Before treating it as production software, add authentication and authorization, review database migration strategy, and enforce booking overlap rules with database-level locking or constraints where the database supports it.
+This project was written by Daniel Henriksen. ChatGPT (AI by OpenAI) was used as a collaborative tool throughout the process.
+
+The project direction, content choices, and final design decisions are Daniel Henriksen's.
