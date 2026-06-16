@@ -14,6 +14,7 @@ A collection of workshop and project assignments completed during the Lexicon .N
 
 ## Project Assignments
 - [CleanBookingV1](./Projects/CleanBookingV1/README.md) — Console-based booking system built in C# using Clean Architecture.
+- [CleanBookingV2](./Projects/CleanBookingV2/README.md) — Application with an ASP.NET Core API, SQLite persistence, and a React/Vite frontend.
 - [DataDrivenCaching](./Projects/DataDrivenCaching/README.md) — Data-driven storage and caching lab with ASP.NET Core, SQLite, sessions, vanilla JavaScript, localStorage, Docker, and a learning dashboard.
 
 ---
