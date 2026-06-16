@@ -1,0 +1,637 @@
+:root {
+  color: #17211b;
+  background: #f5f7f3;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #1f6f50;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button.secondary {
+  background: #dfe8e2;
+  color: #17211b;
+}
+
+button.danger {
+  background: #9d2f36;
+}
+
+button.active {
+  background: #174f3a;
+}
+
+.app-shell {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1.5rem;
+}
+
+.site-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.toolbar-actions {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.toolbar-control {
+  gap: 0.25rem;
+  margin: 0;
+  min-width: 170px;
+}
+
+.toolbar-control,
+.toolbar-checkbox {
+  font-size: 0.9rem;
+}
+
+.toolbar-checkbox {
+  margin: 0;
+  white-space: nowrap;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+.status {
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.status.idle {
+  background: #e9edf3;
+}
+
+.status.success {
+  background: #dcefe5;
+}
+
+.status.error {
+  background: #f6dcdf;
+  color: #721d25;
+}
+
+.home-view {
+  align-items: stretch;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
+}
+
+.home-copy {
+  align-content: center;
+  background: white;
+  border: 1px solid #dce3dd;
+  border-radius: 8px;
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.home-copy h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.home-copy p {
+  color: #4f5d55;
+  max-width: 58ch;
+}
+
+.home-copy button {
+  justify-self: start;
+}
+
+.home-image {
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.stays-view,
+.booking-view {
+  display: grid;
+  gap: 1rem;
+}
+
+.booking-view {
+  grid-template-columns: minmax(320px, 420px) minmax(420px, 1fr);
+}
+
+.booking-view .activity-panel {
+  grid-column: 2;
+}
+
+.search-grid {
+  align-items: end;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.search-grid label {
+  margin-bottom: 0;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(320px, 420px) minmax(420px, 1fr);
+}
+
+.panel {
+  background: white;
+  border: 1px solid #dce3dd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.panel-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.booking-form {
+  grid-row: span 3;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+
+input,
+select {
+  border: 1px solid #b9c7be;
+  border-radius: 6px;
+  color: #17211b;
+  padding: 0.65rem 0.7rem;
+  width: 100%;
+}
+
+.choice-picker {
+  position: relative;
+}
+
+.choice-trigger {
+  background: white;
+  border: 1px solid #b9c7be;
+  border-radius: 6px;
+  color: #17211b;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 0.65rem 0.7rem;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.choice-trigger:disabled {
+  background: #f1f4f0;
+}
+
+.choice-list {
+  background: white;
+  border: 1px solid #b9c7be;
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(23, 33, 27, 0.12);
+  display: grid;
+  left: 0;
+  margin-top: 0.25rem;
+  max-height: 220px;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 20;
+}
+
+.choice-option {
+  background: white;
+  border-radius: 0;
+  color: #17211b;
+  font-weight: 500;
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+}
+
+.choice-option:hover,
+.choice-option.selected {
+  background: #dcefe5;
+}
+
+.two-columns {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.field-stack {
+  display: grid;
+}
+
+.checkbox-row {
+  align-items: center;
+  display: flex;
+}
+
+.checkbox-row input {
+  width: auto;
+}
+
+.form-actions {
+  border-top: 1px solid #dce3dd;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.25rem;
+  padding-top: 1rem;
+}
+
+.form-actions button {
+  justify-self: center;
+  min-width: 160px;
+}
+
+.booking-items {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.booking-item {
+  align-items: stretch;
+  border: 1px solid #dce3dd;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr auto;
+  padding: 0.75rem;
+}
+
+.booking-item.selected {
+  border-color: #1f6f50;
+}
+
+.booking-item.cancelled {
+  opacity: 0.65;
+}
+
+.booking-main {
+  background: transparent;
+  color: #17211b;
+  display: grid;
+  gap: 0.2rem;
+  padding: 0;
+  text-align: left;
+}
+
+.room-panel,
+.activity-panel {
+  grid-column: 2;
+}
+
+.stays-view .room-panel {
+  grid-column: auto;
+}
+
+.room-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.room-card {
+  background: white;
+  border: 1px solid #dce3dd;
+  border-radius: 8px;
+  color: #17211b;
+  cursor: pointer;
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.room-card.selected {
+  border-color: #1f6f50;
+  box-shadow: 0 0 0 2px rgba(31, 111, 80, 0.16);
+}
+
+.room-detail {
+  border-top: 1px solid #dce3dd;
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.room-photo {
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.room-detail-copy {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.room-detail-copy h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.room-calendar {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.calendar-header,
+.calendar-legend {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.calendar-nav {
+  min-width: 72px;
+  padding: 0.45rem 0.65rem;
+}
+
+.calendar-legend {
+  color: #5d6b62;
+  font-size: 0.85rem;
+  justify-content: flex-start;
+}
+
+.calendar-legend span {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.3rem;
+}
+
+.legend-dot {
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.calendar-grid {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.calendar-weekday,
+.calendar-day {
+  align-items: center;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.calendar-weekday {
+  aspect-ratio: auto;
+  color: #5d6b62;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.calendar-day {
+  border: 1px solid transparent;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.calendar-day.free,
+.legend-dot.free {
+  background: #dcefe5;
+  color: #174f3a;
+}
+
+.calendar-day.booked,
+.legend-dot.booked {
+  background: #f2c8cc;
+  color: #721d25;
+}
+
+.calendar-day.outside-month {
+  opacity: 0.45;
+}
+
+.empty {
+  color: #5d6b62;
+}
+
+.activity-items {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.activity-item {
+  border-left: 4px solid #8a9890;
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.2rem 0 0.2rem 0.75rem;
+}
+
+.activity-item.success {
+  border-color: #1f6f50;
+}
+
+.activity-item.error {
+  border-color: #9d2f36;
+}
+
+.activity-item span {
+  color: #5d6b62;
+  font-size: 0.9rem;
+}
+
+.app-shell[data-density="compact"] {
+  line-height: 1.35;
+}
+
+.app-shell[data-density="compact"] .panel,
+.app-shell[data-density="compact"] .booking-item,
+.app-shell[data-density="compact"] .room-card {
+  padding: 0.65rem;
+}
+
+.app-shell[data-density="compact"] .panel-header,
+.app-shell[data-density="compact"] label,
+.app-shell[data-density="compact"] .status {
+  margin-bottom: 0.55rem;
+}
+
+.app-shell[data-density="compact"] input,
+.app-shell[data-density="compact"] select,
+.app-shell[data-density="compact"] .choice-trigger,
+.app-shell[data-density="compact"] .choice-option,
+.app-shell[data-density="compact"] button {
+  padding: 0.45rem 0.6rem;
+}
+
+.app-shell[data-density="compact"] .booking-items,
+.app-shell[data-density="compact"] .room-grid,
+.app-shell[data-density="compact"] .activity-items {
+  gap: 0.45rem;
+}
+
+.app-shell[data-density="compact"] .booking-item {
+  align-items: center;
+  border-left: 4px solid #dce3dd;
+  border-radius: 0;
+  border-right: 0;
+  border-top: 0;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 0.45rem 0.55rem;
+}
+
+.app-shell[data-density="compact"] .booking-item.selected {
+  border-left-color: #1f6f50;
+  border-bottom-color: #dce3dd;
+}
+
+.app-shell[data-density="compact"] .booking-main {
+  align-items: center;
+  column-gap: 0.75rem;
+  display: grid;
+  grid-template-columns: minmax(120px, 1.1fr) minmax(90px, 0.8fr) minmax(110px, 1fr) minmax(180px, 1.5fr) minmax(80px, auto);
+}
+
+.app-shell[data-density="compact"] .booking-main span,
+.app-shell[data-density="compact"] .booking-main strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-shell[data-density="compact"] .room-card {
+  align-items: center;
+  border-radius: 0;
+  grid-template-columns: minmax(90px, 1fr) repeat(4, auto);
+  padding: 0.45rem 0.55rem;
+}
+
+.app-shell[data-density="compact"] .room-card.selected {
+  box-shadow: none;
+}
+
+.app-shell[data-density="compact"] .activity-item {
+  border-left-width: 3px;
+  padding: 0.1rem 0 0.1rem 0.55rem;
+}
+
+@media (max-width: 900px) {
+  .site-header,
+  .home-view,
+  .booking-view,
+  .dashboard-grid,
+  .room-panel,
+  .activity-panel {
+    grid-template-columns: 1fr;
+    grid-column: auto;
+  }
+
+  .two-columns,
+  .room-grid,
+  .search-grid,
+  .form-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .site-nav button {
+    flex: 1;
+  }
+
+  .toolbar-actions {
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .toolbar-control {
+    min-width: 0;
+  }
+
+  .app-shell[data-density="compact"] .booking-main,
+  .app-shell[data-density="compact"] .room-card {
+    grid-template-columns: 1fr;
+  }
+}
