@@ -4,6 +4,12 @@
     <ProjectReference Include="..\..\Domain\CleanBookingV1.Domain\CleanBookingV1.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Queries\" />
+    <Folder Include="Validators\Bookings\" />
+    <Folder Include="Validators\Rooms\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

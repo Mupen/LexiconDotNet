@@ -432,3 +432,10 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# CleanBooking local/runtime outputs
+Projects/CleanBookingV2/**/*.log
+Projects/CleanBookingV2/**/Data/*.db
+Projects/CleanBookingV2/**/Data/*.db-shm
+Projects/CleanBookingV2/**/Data/*.db-wal
+Projects/CleanBookingV2/**/dist/

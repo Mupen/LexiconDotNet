@@ -1,38 +1,38 @@
 <Solution>
   <Folder Name="/Workshops/" />
-  <Folder Name="/Workshops/Calculator/">
-    <Project Path="Workshops/Calculator/Calculator.Core/Calculator.Core.csproj" />
-    <Project Path="Workshops/Calculator/Calculator.Tests/Calculator.Tests.csproj" />
-  </Folder>
+    <Folder Name="/Workshops/Calculator/">
+      <Project Path="Workshops/Calculator/Calculator.Core/Calculator.Core.csproj" />
+      <Project Path="Workshops/Calculator/Calculator.Tests/Calculator.Tests.csproj" />
+    </Folder>
 
-  <Folder Name="/Workshops/Hangman/">
-    <Project Path="Workshops/Hangman/Hangman.csproj" />
-  </Folder>
+    <Folder Name="/Workshops/Hangman/">
+      <Project Path="Workshops/Hangman/Hangman.csproj" />
+    </Folder>
 
-  <Folder Name="/Workshops/SalesSystem/">
-    <Project Path="Workshops/SalesSystem/SalesSystem.Api/SalesSystem.Api.csproj" />
-    <Project Path="Workshops/SalesSystem/SalesSystem.Application/SalesSystem.Application.csproj" />
-    <Project Path="Workshops/SalesSystem/SalesSystem.Domain/SalesSystem.Domain.csproj" />
-    <Project Path="Workshops/SalesSystem/SalesSystem.Infrastructure/SalesSystem.Infrastructure.csproj" />
-    <Project Path="Workshops/SalesSystem/SalesSystem.UnitTests/SalesSystem.UnitTests.csproj" />
-  </Folder>
+    <Folder Name="/Workshops/SalesSystem/">
+      <Project Path="Workshops/SalesSystem/SalesSystem.Api/SalesSystem.Api.csproj" />
+      <Project Path="Workshops/SalesSystem/SalesSystem.Application/SalesSystem.Application.csproj" />
+      <Project Path="Workshops/SalesSystem/SalesSystem.Domain/SalesSystem.Domain.csproj" />
+      <Project Path="Workshops/SalesSystem/SalesSystem.Infrastructure/SalesSystem.Infrastructure.csproj" />
+      <Project Path="Workshops/SalesSystem/SalesSystem.UnitTests/SalesSystem.UnitTests.csproj" />
+    </Folder>
 
-  <Folder Name="/Workshops/ShoppingCart/">
-    <Project Path="Workshops/ShoppingCart/ShoppingCart.Api/ShoppingCart.Api.csproj" />
-    <Project Path="Workshops/ShoppingCart/ShoppingCart.Application/ShoppingCart.Application.csproj" />
-    <Project Path="Workshops/ShoppingCart/ShoppingCart.Domain/ShoppingCart.Domain.csproj" />
-    <Project Path="Workshops/ShoppingCart/ShoppingCart.Infrastructure/ShoppingCart.Infrastructure.csproj" />
-    <Project Path="Workshops/ShoppingCart/ShoppingCart.UnitTests/ShoppingCart.UnitTests.csproj" />
-  </Folder>
+    <Folder Name="/Workshops/ShoppingCart/">
+      <Project Path="Workshops/ShoppingCart/ShoppingCart.Api/ShoppingCart.Api.csproj" />
+      <Project Path="Workshops/ShoppingCart/ShoppingCart.Application/ShoppingCart.Application.csproj" />
+      <Project Path="Workshops/ShoppingCart/ShoppingCart.Domain/ShoppingCart.Domain.csproj" />
+      <Project Path="Workshops/ShoppingCart/ShoppingCart.Infrastructure/ShoppingCart.Infrastructure.csproj" />
+      <Project Path="Workshops/ShoppingCart/ShoppingCart.UnitTests/ShoppingCart.UnitTests.csproj" />
+    </Folder>
 
-  <Folder Name="/Workshops/Sokoban/" />
+    <Folder Name="/Workshops/Sokoban/" />
 
-  <Folder Name="/Workshops/WebCV/">
-    <Project Path="Workshops/WebCV/WebCV.Api/WebCV.Api.csproj" />
-    <Project Path="Workshops/WebCV/WebCV.Application/WebCV.Application.csproj" />
-    <Project Path="Workshops/WebCV/WebCV.Domain/WebCV.Domain.csproj" />
-    <Project Path="Workshops/WebCV/WebCV.Infrastructure/WebCV.Infrastructure.csproj" />
-  </Folder>
+    <Folder Name="/Workshops/WebCV/">
+      <Project Path="Workshops/WebCV/WebCV.Api/WebCV.Api.csproj" />
+      <Project Path="Workshops/WebCV/WebCV.Application/WebCV.Application.csproj" />
+      <Project Path="Workshops/WebCV/WebCV.Domain/WebCV.Domain.csproj" />
+      <Project Path="Workshops/WebCV/WebCV.Infrastructure/WebCV.Infrastructure.csproj" />
+    </Folder>
   <Folder Name="/Projects/" />
   <Folder Name="/Projects/DataDrivenCaching/">
     <Project Path="Projects/DataDrivenCaching/DataDrivenCaching.Api/DataDrivenCaching.Api.csproj" />
@@ -46,5 +46,12 @@
     <Project Path="Projects/CleanBookingV1/Domain/CleanBookingV1.Domain/CleanBookingV1.Domain.csproj" />
     <Project Path="Projects/CleanBookingV1/Infrastructure/CleanBookingV1.Infrastructure/CleanBookingV1.Infrastructure.csproj" />
     <Project Path="Projects/CleanBookingV1/UnitTests/CleanBookingV1.UnitTests/CleanBookingV1.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/Projects/CleanBookingV2/">
+    <Project Path="Projects/CleanBookingV2/Api/CleanBookingV2.Api/CleanBookingV2.Api.csproj" />
+    <Project Path="Projects/CleanBookingV2/Application/CleanBookingV2.Application/CleanBookingV2.Application.csproj" />
+    <Project Path="Projects/CleanBookingV2/Domain/CleanBookingV2.Domain/CleanBookingV2.Domain.csproj" />
+    <Project Path="Projects/CleanBookingV2/Infrastructure/CleanBookingV2.Infrastructure/CleanBookingV2.Infrastructure.csproj" />
+    <Project Path="Projects/CleanBookingV2/UnitTests/CleanBookingV2.UnitTests/CleanBookingV2.UnitTests.csproj" />
   </Folder>
 </Solution>
