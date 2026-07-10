@@ -1,0 +1,23 @@
+/*
+ * What: Styles the admin editorial workspace.
+ * How: lays out the editor form, preview panel, and management table for
+ * admin-created articles.
+ * Why: editorial work is a production workflow and needs denser controls than the
+ * public reading pages.
+ */
+.editorial-form,
+.editorial-preview {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.editorial-preview {
+  align-content: start;
+}
+
+.editorial-preview img {
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}

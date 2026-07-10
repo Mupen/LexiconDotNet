@@ -1,0 +1,96 @@
+/*
+ * What: Styles reusable article presentation components.
+ * How: defines shared card, featured article, metadata, image, table, and action
+ * layouts used by article pages.
+ * Why: article UI appears on several routes, so shared styling prevents each page
+ * from inventing a different article layout.
+ */
+.eyebrow,
+.source {
+  color: #66747c;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.featured-article,
+.article-card {
+  background: white;
+  border: 1px solid #d7e0e4;
+  border-radius: 8px;
+}
+
+.featured-article {
+  display: grid;
+  overflow: hidden;
+}
+
+.featured-article img {
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.featured-copy {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.1rem;
+}
+
+.featured-copy h2 {
+  font-size: 1.8rem;
+  line-height: 1.12;
+}
+
+.empty-feature {
+  padding: 1.25rem;
+}
+
+.article-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.article-card {
+  display: grid;
+  overflow: hidden;
+}
+
+.article-card img {
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.article-card-copy {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem;
+}
+
+.article-card h3 {
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.article-card .article-actions button,
+.featured-article .article-actions button {
+  justify-self: start;
+}
+
+.article-card.compact {
+  grid-template-columns: 110px 1fr;
+}
+
+.article-card.compact img {
+  aspect-ratio: auto;
+  height: 100%;
+}
+
+.saved-page {
+  display: grid;
+  gap: 1rem;
+}

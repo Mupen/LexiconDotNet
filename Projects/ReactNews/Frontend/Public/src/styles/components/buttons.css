@@ -1,0 +1,48 @@
+/*
+ * What: Styles shared button and link-button controls.
+ * How: centralizes command colors, spacing, borders, disabled states, and compact
+ * button variants.
+ * Why: actions across news, account, and editorial pages should look and behave
+ * consistently.
+ */
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #0b5c7a;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+button.secondary {
+  background: #dfe7ea;
+  color: #17202a;
+}
+
+button.active {
+  background: #12384a;
+}
+
+.primary-link {
+  background: #0b5c7a;
+  border-radius: 6px;
+  color: white;
+  justify-self: start;
+  padding: 0.75rem 1rem;
+}
+
+.article-actions,
+.button-row,
+.pager,
+.view-toggle {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

@@ -1,0 +1,12 @@
+.env
+*.log
+**/bin/
+**/obj/
+Backend/Api/ReactNews.Api/Logs/
+Backend/Api/ReactNews.Api/Data/
+Backend/Api/ReactNews.Api/appsettings.Local.json
+Frontend/Public/node_modules/
+Frontend/Public/dist/
+Frontend/Public/Logs/
+Frontend/Public/test-results/
+Frontend/Public/playwright-report/

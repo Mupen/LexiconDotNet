@@ -1,0 +1,36 @@
+/*
+ * What: Styles the public editorial feed and public editorial detail experience.
+ * How: defines feed grids, editorial cards, metadata, and first-party article
+ * presentation.
+ * Why: ReactNews-owned articles should be visually related to normal news content
+ * while still being identifiable as editorial content.
+ */
+.editorial-feed-intro {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editorial-feed-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.editorial-feed-card {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(12rem, 18rem) 1fr;
+}
+
+.editorial-feed-card img {
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.editorial-body {
+  display: grid;
+  gap: 1rem;
+}

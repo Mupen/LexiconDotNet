@@ -1,0 +1,28 @@
+/*
+ * What: Styles status messages shown by shared frontend components.
+ * How: uses type-specific colors and spacing for idle, success, and error states.
+ * Why: API loading and validation feedback should be visible without each page
+ * writing its own alert styling.
+ */
+.status {
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 0.85rem 1rem;
+}
+
+.status.idle {
+  background: #e8edf0;
+}
+
+.status.success {
+  background: #dcefe5;
+}
+
+.status.error {
+  background: #f5dbdf;
+  color: #7d1c28;
+}
+
+.empty {
+  color: #65727a;
+}

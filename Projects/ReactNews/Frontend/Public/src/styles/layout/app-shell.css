@@ -1,0 +1,85 @@
+/*
+ * What: Styles the main application shell and global layout helpers.
+ * How: sets page width, spacing, theme variants, panels, headers, grids, and empty
+ * states shared across routes.
+ * Why: route components can focus on feature content while the shell controls the
+ * overall reading surface.
+ */
+.app-shell {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1rem;
+}
+
+.app-shell.theme-dark {
+  background: #141819;
+  color: #eef4f6;
+}
+
+.app-shell.theme-dark .panel,
+.app-shell.theme-dark .article-card,
+.app-shell.theme-dark .featured-article,
+.app-shell.theme-dark .detail-page {
+  background: #20282b;
+  border-color: #3a484d;
+}
+
+.app-shell.theme-dark .source,
+.app-shell.theme-dark .eyebrow,
+.app-shell.theme-dark .section-header p {
+  color: #aab7bc;
+}
+
+.site-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.dashboard-layout,
+.main-column,
+.personal-page,
+.profile-page,
+.account-page,
+.editorial-page {
+  display: grid;
+  gap: 1rem;
+}
+
+.section-header,
+.panel-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.section-header {
+  flex-wrap: wrap;
+}
+
+.section-header p {
+  color: #65727a;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #d7e0e4;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.dashboard-cards,
+.account-grid,
+.profile-layout,
+.editorial-layout {
+  display: grid;
+  gap: 1rem;
+}

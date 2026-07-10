@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+Frontend/Public/node_modules/
+Frontend/Public/dist/
+Backend/Api/ReactNews.Api/Logs/
+Backend/Api/ReactNews.Api/Data/
+Frontend/Public/Logs/
+.env
+*.log

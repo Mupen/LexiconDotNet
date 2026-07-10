@@ -1,0 +1,64 @@
+/*
+ * What: Styles article detail reading pages.
+ * How: controls detail container width, metadata spacing, hero image behavior, and
+ * article body readability.
+ * Why: detail pages need a calmer long-form layout than feed cards or tables.
+ */
+.detail-page {
+  background: white;
+  border: 1px solid #d7e0e4;
+  border-radius: 8px;
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.back-link {
+  padding: 1rem 1rem 0;
+}
+
+.detail-image {
+  aspect-ratio: 16 / 8;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.detail-copy {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.1rem;
+}
+
+.detail-copy h1 {
+  font-size: 2rem;
+  line-height: 1.12;
+}
+
+.lead {
+  color: #4d5c64;
+  font-size: 1.1rem;
+}
+
+.metadata-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.metadata-list div {
+  border-top: 1px solid #d7e0e4;
+  display: grid;
+  gap: 0.15rem;
+  padding-top: 0.75rem;
+}
+
+.metadata-list dt {
+  color: #65727a;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.metadata-list dd {
+  margin: 0;
+}

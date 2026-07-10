@@ -1,0 +1,29 @@
+/*
+ * What: Styles navigation, topic tabs, and route links.
+ * How: defines flex layouts, active states, spacing, and responsive wrapping for
+ * navigation controls.
+ * Why: users move between public news, personal pages, and admin pages often, so
+ * navigation needs consistent visual feedback.
+ */
+.site-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.site-nav a {
+  background: white;
+  border: 1px solid #d7e0e4;
+  border-radius: 6px;
+  padding: 0.55rem 0.8rem;
+}
+
+.topic-tabs {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+
+.topic-tabs button {
+  white-space: nowrap;
+}

@@ -1,0 +1,20 @@
+/*
+ * What: Central stylesheet entry for the ReactNews frontend.
+ * How: imports base, layout, component, page, and responsive CSS modules in a
+ * predictable order.
+ * Why: Vite can load one CSS entry from main.jsx while the project keeps styles
+ * separated by responsibility.
+ */
+@import './styles/base/reset.css';
+@import './styles/layout/app-shell.css';
+@import './styles/components/buttons.css';
+@import './styles/components/status.css';
+@import './styles/components/navigation.css';
+@import './styles/components/articles.css';
+@import './styles/components/forms.css';
+@import './styles/components/tables.css';
+@import './styles/pages/article-detail.css';
+@import './styles/pages/account.css';
+@import './styles/pages/editorial.css';
+@import './styles/pages/editorial-feed.css';
+@import './styles/responsive/breakpoints.css';

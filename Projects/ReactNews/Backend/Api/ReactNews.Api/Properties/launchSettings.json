@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "ReactNews.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/health",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5217"
+    }
+  }
+}

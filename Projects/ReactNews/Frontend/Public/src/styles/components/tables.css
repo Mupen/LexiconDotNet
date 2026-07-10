@@ -1,0 +1,60 @@
+/*
+ * What: Styles reusable table layouts.
+ * How: applies full-width table containers, row borders, header emphasis, and
+ * compact cell spacing.
+ * Why: editorial/admin data should remain readable as structured rows rather than
+ * as separate ad-hoc card layouts.
+ */
+.article-table-panel {
+  background: white;
+  border: 1px solid #d7e0e4;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.table-note {
+  color: #65727a;
+  font-size: 0.9rem;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 780px;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #d7e0e4;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #eef3f5;
+  font-size: 0.85rem;
+}
+
+.table-sort {
+  background: transparent;
+  color: #17202a;
+  padding: 0;
+  text-align: left;
+}
+
+.table-sort:disabled {
+  opacity: 1;
+}
+
+.table-actions {
+  display: flex;
+  gap: 0.7rem;
+  white-space: nowrap;
+}
