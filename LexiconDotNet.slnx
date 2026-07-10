@@ -54,4 +54,11 @@
     <Project Path="Projects/CleanBookingV2/Infrastructure/CleanBookingV2.Infrastructure/CleanBookingV2.Infrastructure.csproj" />
     <Project Path="Projects/CleanBookingV2/UnitTests/CleanBookingV2.UnitTests/CleanBookingV2.UnitTests.csproj" />
   </Folder>
+  <Folder Name="/Projects/ReactNews/">
+    <Project Path="Projects/ReactNews/Backend/Api/ReactNews.Api/ReactNews.Api.csproj" />
+    <Project Path="Projects/ReactNews/Backend/Application/ReactNews.Application/ReactNews.Application.csproj" />
+    <Project Path="Projects/ReactNews/Backend/Domain/ReactNews.Domain/ReactNews.Domain.csproj" />
+    <Project Path="Projects/ReactNews/Backend/Infrastructure/ReactNews.Infrastructure/ReactNews.Infrastructure.csproj" />
+    <Project Path="Projects/ReactNews/Backend/UnitTests/ReactNews.UnitTests/ReactNews.UnitTests.csproj" />
+  </Folder>
 </Solution>
